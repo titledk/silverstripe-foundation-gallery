@@ -1,0 +1,22 @@
+{
+    "name": "anselmdk/silverstripe-foundation-gallery",
+    "description": "A very simple Silverstripe gallery, using Foundation's Clearing Plugin",
+    "type": "silverstripe-module",
+    "keywords": ["silverstripe", "gallery", "zurbfoundation"],
+    "authors": [
+        {
+            "name": "Anselm Christophersen",
+            "homepage": "http://anselm.dk"
+        }
+    ],
+    "require":
+    {
+        "silverstripe/framework": "3.*",
+        "silverstripe/cms": "3.*",
+        "undefinedoffset/sortablegridfield": "dev-master",
+        "colymba/gridfield-bulk-editing-tools": "dev-master"
+    },
+    "support": {
+        "issues": "https://github.com/anselmdk/silverstripe-foundation-gallery/issues"
+    } 
+}
