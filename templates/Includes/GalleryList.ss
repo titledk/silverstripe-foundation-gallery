@@ -1,6 +1,6 @@
 
 <ul class="GalleryList block-grid three-up" data-clearing>
-	<% loop Slides %>
+	<% loop GalleryItems %>
 		<% if $Image %>
 			<li>
 				<a class="thumb-link" href="$Image.URL">
