@@ -16,6 +16,9 @@
         "undefinedoffset/sortablegridfield": "dev-master",
         "colymba/gridfield-bulk-editing-tools": "dev-master"
     },
+		"extra": {
+			"installer-name": "foundation-gallery"
+		},		
     "support": {
         "issues": "https://github.com/anselmdk/silverstripe-foundation-gallery/issues"
     } 

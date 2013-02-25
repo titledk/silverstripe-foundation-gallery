@@ -15,6 +15,17 @@ class Slideshow extends DataExtension {
 		$config->addComponent(new GridFieldSortableRows('SortOrder'));
 
 
+		//Bulk image upload
+    $config->addComponent(new GridFieldBulkEditingTools());
+    
+		$bulkUpload = new GridFieldBulkImageUpload();
+		$owner = $this->owner;
+		$urlSegment = $owner->ID . '-' . $owner->generateURLSegment($owner->Title);
+		$dirName = 'galleries/' . $urlSegment;
+		$bulkUpload->setConfig('folderName', $dirName);
+		
+		$config->addComponent($bulkUpload);		
+		
 		$gridField = new GridField('Slides', _t('Slideshow.PROMOTIONS', 'Promotions'), $this->owner->Slides(), $config);
 		$fields->addFieldToTab('Root', new Tab('Slideshow', _t('Slideshow.SLIDESHOWTAB', 'Slideshow')));
 		$fields->addFieldToTab('Root.Slideshow', $gridField);
@@ -22,15 +33,15 @@ class Slideshow extends DataExtension {
 	}
 }
 
-class Slideshow_Controller extends SiteTreeExtension { 
-
-	public function contentcontrollerInit($controller) {
-		if ($this->owner->Slides()) {
-			Requirements::javascript(THIRDPARTY_DIR."/jquery/jquery.min.js");
-			Requirements::javascript("Slideshow/thirdparty/jquery.cycle.js");
-			Requirements::javascript("Slideshow/js/core.js");
-			Requirements::css("Slideshow/css/Slideshow.css");
-		}
-		
-	}
-}
+//class Slideshow_Controller extends SiteTreeExtension { 
+//
+//	public function contentcontrollerInit($controller) {
+//		if ($this->owner->Slides()) {
+//			Requirements::javascript(THIRDPARTY_DIR."/jquery/jquery.min.js");
+//			Requirements::javascript("Slideshow/thirdparty/jquery.cycle.js");
+//			Requirements::javascript("Slideshow/js/core.js");
+//			Requirements::css("Slideshow/css/Slideshow.css");
+//		}
+//		
+//	}
+//}

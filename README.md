@@ -5,7 +5,7 @@
 * Silverstripe 3
 * [SortableGridField](http://github.com/UndefinedOffset/SortableGridField)
 * [GridfieldBulkEditingTools](https://github.com/colymba/GridFieldBulkEditingTools)
-
+* [Clearing](http://foundation.zurb.com/docs/clearing.php)
 
 ## Attributions
 
