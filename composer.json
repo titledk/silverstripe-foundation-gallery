@@ -1,5 +1,5 @@
 {
-    "name": "anselmdk/silverstripe-foundation-gallery",
+    "name": "titledk/silverstripe-foundation-gallery",
     "description": "A very simple Silverstripe gallery, using Foundation's Clearing Plugin",
     "type": "silverstripe-module",
     "keywords": ["silverstripe", "gallery", "zurbfoundation"],
@@ -20,6 +20,6 @@
 			"installer-name": "foundation-gallery"
 		},		
     "support": {
-        "issues": "https://github.com/anselmdk/silverstripe-foundation-gallery/issues"
+        "issues": "https://github.com/titledk/silverstripe-foundation-gallery/issues"
     } 
 }
